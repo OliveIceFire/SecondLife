@@ -1,0 +1,97 @@
+{% extends 'game/base.html' %}
+{% load staticfiles %}
+{% block title_block %}
+    Archive
+{% endblock %}
+
+{% block body_block %}
+
+
+<link rel="stylesheet" href="../../static/css/archive.css">
+    <script type="text/javascript">
+        var archive = [];
+        {% autoescape off%}
+            archive[0] = {{archive1|safe}};
+            archive[1] = {{archive2|safe}};
+            archive[2] = {{archive3|safe}};
+        {% endautoescape %}
+        var state = {{ state }};
+    </script>
+<div class="main">
+    <div class="formPosition">
+        <h1 class="gradient-text">Read Archive</h1>
+        <div>
+            <p>
+            {% if user.is_authenticated %}
+                Choose an Archive
+            {% else %}
+                Welcome to your new life
+            {% endif %}
+            </p>
+            <br />
+
+        </div>
+
+        <div class="archive1">
+
+            <div class="oneBorder noLight" id="oneBorder">
+                <div class="one" id="one">
+                     <div class="rowHead">
+                    Archive One
+                </div>
+                <a href="#" onclick="select1()">
+                    <div id="name1" class="row"></div>
+                    <div id="portrait1" class="row portrait"></div>
+                    <div id="detail1" class="row"></div>
+                    <div id="time1" class="row"></div>
+                </a>
+                </div>
+            </div>
+            <div class="twoBorder noLight" id="twoBorder">
+                 <div class="two" id="two">
+                <div class="rowHead">
+                    Archive Two
+                </div>
+                <a href="#" onclick="select2()">
+                    <div id="name2" class="row">
+                    </div>
+                    <div id="portrait2" class="row portrait" >
+                    </div>
+                    <div id="detail2" class="row">
+                    </div>
+                    <div id="time2" class="row">
+                    </div>
+                </a>
+            </div>
+            </div>
+
+            <div class="threeBorder noLight" id="threeBorder">
+                 <div class="three" id="three">
+                <div class="rowHead">
+                    Archive Three
+                </div>
+                <a href="#" onclick="select3()">
+                    <div id="name3" class="row">
+                    </div>
+                    <div id="portrait3" class="row portrait">
+                    </div>
+                    <div id="detail3" class="row">
+                    </div>
+                    <div id="time3" class="row">
+                    </div>
+                </a>
+            </div>
+            </div>
+         <button id="saveBtn" onclick="save()" disabled hidden><div class="saveFile">Save Archive</div></button>
+        <button id="readBtn" onclick="read()"><div class="readFile">Read Archive</div></button>
+        <a href="{% url 'second_life:game' %}"><div id="gamePage"  class="game">Game Page</div></a>
+        <a href="{% url 'second_life:index' %}"><div class="index">Main Page</div></a>
+        </div>
+
+
+    </div>
+
+</div>
+<script src="../../static/js/archive.js"></script>
+<script src="../../static/js/common.js"></script>
+{% endblock %}

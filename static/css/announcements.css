@@ -1,0 +1,66 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.formPosition{
+  /*font-style: oblique;*/
+	height: 140px;
+	margin: auto;
+  	width: 50%;
+  	padding: 10px;
+	color: black;
+	opacity: 0.6;
+	background-color: #B0E0E6;
+}
+
+h1{
+  font-family: "papyrus"; 
+  font-size: 400%;
+  text-align: center;
+}
+
+p {
+    color: #fff;
+    font-style: oblique;
+    text-shadow: 
+        0 0 10px #0ebeff,
+        0 0 20px #0ebeff,
+        0 0 50px #0ebeff,
+        0 0 100px #0ebeff,
+        0 0 200px #0ebeff
+}
+
+
+p{
+  text-align: center;
+  color: white;
+  font-size: 120%;
+  font-style: oblique;
+/*font-family: "papyrus"; */
+
+}
+
+
+
+.field{
+  text-align: center;
+  color: black;
+  font-size: 120%;
+}
+
+.button{
+  position:center;
+}
+
+.head {
+  font-family: "papyrus";
+  font-size: 220%;
+  font-weight: bold;
+  text-align: center;
+  background: -webkit-linear-gradient(#5887c4, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+

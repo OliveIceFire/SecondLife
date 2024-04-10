@@ -1,0 +1,622 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*font-style*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+.top {
+    color: #fff;
+    font-style: oblique;
+    text-shadow: 
+        0 0 10px #0ebeff,
+        0 0 20px #0ebeff,
+        0 0 50px #0ebeff,
+        0 0 100px #0ebeff,
+        0 0 200px #0ebeff
+}
+
+.formPosition2 {
+    color: #fff;
+    font-style: oblique;
+    text-shadow: 
+        0 0 10px red,
+        0 0 20px #0ebeff,
+        0 0 50px blue,
+        0 0 100px #0ebeff,
+        0 0 200px #0ebeff
+}
+
+.store{
+	font-style: oblique;
+}
+
+.subMiddle {
+    color: #fff;
+    font-style: oblique;
+    text-shadow: 
+        0 0 10px #0ebeff,
+        0 0 20px #0ebeff,
+        0 0 50px #0ebeff,
+        0 0 100px #0ebeff,
+        0 0 200px #0ebeff
+}
+
+.next {
+    color: #fff;
+    font-style: oblique;
+    text-shadow: 
+        0 0 10px #0ebeff,
+        0 0 20px #0ebeff,
+        0 0 50px #0ebeff,
+        0 0 100px #0ebeff,
+        0 0 200px #0ebeff
+}
+
+.select {
+    color: #fff;
+    font-style: oblique;
+    text-shadow: 
+        0 0 10px #0ebeff,
+        0 0 20px #0ebeff,
+        0 0 50px #0ebeff,
+        0 0 100px #0ebeff,
+        0 0 200px #0ebeff
+}
+.shop {
+    text-shadow: 0 0 5px #fff;
+}
+.save {
+    text-shadow: 0 0 5px #fff;
+}
+.teamList {
+    text-shadow: 0 0 5px #fff;
+}
+.tips {
+    text-shadow: 0 0 5px #fff;
+}
+
+.tableHead{
+	  font-family: "papyrus"; 
+}
+
+/*position*/
+a:link{ text-decoration: none; color: black;}
+a:active { text-decoration:none;color: black;}
+a:hover { text-decoration:none;color: black;} 
+a:visited { text-decoration: none;color: black;}
+
+body{
+	font-family: "Microsoft Yahei";
+}
+
+.glyphicon{
+	cursor: pointer;
+
+}
+
+.main{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-image: url("../image/background/CC.png");
+	background-repeat: no-repeat;
+	text-align: center;
+	line-height: 100%;
+}
+
+.game{
+	height: 300px;
+	width: 700px;
+	margin: -300px 0 0 -400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	z-index: 3;
+}
+
+.top{
+	position: relative;
+	height: 50px;
+	width: 900px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	opacity: 1;
+	z-index: 1;
+}
+
+.top td{
+	height: 50px;
+	width: 190px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	background-image: url("../image/background/CC.png");
+	color: wheat;
+
+}
+
+
+.shop{
+	position: absolute;
+	top: 0;
+	left: -150px;
+	width: 100px;
+	height: 100px;
+	font-style: oblique;
+	font-size: 20px;
+	line-height: 40px;
+	color: #B0E0E6 ;
+	border: 1px solid red;
+	border-radius: 50%;
+	text-align: center;
+	background-image: url("../image/background/A.png");
+	background-size: 200px;
+    opacity:0.6;
+    border-image: url("../image/background/CC.png");
+}
+
+.save{
+	position: absolute;
+	top: 125px;
+	left: -150px;
+	width: 100px;
+	height: 100px;
+	font-style: oblique;
+	font-size: 20px;
+	line-height: 100px;
+	color: #B0E0E6 ;
+	border-radius: 50%;
+	text-align: center;
+ 	background-image: url("../image/background/RR.png");
+    border-image: url("../image/background/A.png");
+	opacity: 0.7;
+	
+}
+
+.teamList{
+	position: absolute;
+	top: 0;
+	left: 950px;
+	width: 100px;
+	height: 100px;
+	font-style: oblique;
+	font-size: 20px;
+	line-height: 40px;
+	color: #B0E0E6 ;
+	border: 1px solid red;
+	border-radius: 50%;
+	text-align: center;
+	background-image: url("../image/background/A.png");
+	background-size: 200px;
+	opacity:0.6;
+	border-image: url("../image/background/CC.png");
+}
+
+.tips{
+	position: absolute;
+	top: 125px;
+	left: 950px;
+	width: 100px;
+	height: 100px;
+	font-style: oblique;
+	font-size: 20px;
+	line-height: 100px;
+	color: #B0E0E6 ;
+	border-radius: 50%;
+	text-align: center;
+	background-image: url("../image/background/RR.png");
+	border-image: url("../image/background/A.png");
+	opacity: 0.7;
+
+}
+
+.middle{
+	position: relative;
+	top: 10px;
+	height: 300px;
+	width: 900px;
+	opacity: 0.7;
+
+}
+
+/*event*/
+.subMiddle{
+	position: relative;
+	height: 400px;
+	width: auto;
+	background-image: url("../image/background/A.png");
+	border: solid;
+	margin-top: 70px;
+	z-index: 1;
+	/*overflow-y: scroll;*/
+}
+
+.subMiddle .body{
+	height: 330px;
+	overflow: auto;
+}
+
+
+
+.subMiddle ::-webkit-scrollbar {
+	width: 16px;
+	background-image: url("../image/background/CC.png");
+}
+
+.subMiddle ::-webkit-scrollbar-thumb
+{
+    border-radius:10px;
+    -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);
+    background-image: url("../image/background/QQ.png");
+}
+
+.subMiddle td{
+	width: 500px;
+	height: 60px;
+	line-height: 60px;
+	color: yellow;
+	background-image: url("../image/background/A.png");	
+}
+
+.subMiddle thead{
+	position: fixed;
+	width: 878px;
+}
+
+.subMiddle .tableHead{
+	position: fixed;
+	width: 896px;
+	height: 60px;
+	background-image: url("../image/background/A.png");		
+	line-height: 60px;
+	font-size: 20px;
+	font-style: oblique;
+	color: yellow;
+}
+
+.subMiddle .tableHead .left{
+	height: 60px;
+	width: 448px;
+	background-image: url("../image/background/A.png");		
+	float: left;
+}
+
+
+.subMiddle tbody{
+	display: block;
+	margin-top: 40px;
+}
+
+.subMiddle .body{
+	margin-top: 61px;
+	border-left: none;
+	border-right: none;
+}
+
+.subMiddle2{
+	position: relative;
+	height: 50px;
+	width: auto;
+	border: solid;
+	margin-top: 10px;
+	z-index: 1;
+
+}
+
+
+.subMiddle2 .downRight{
+	height: 46px;
+	width: 80px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 27px;
+	margin-left: 810px;
+	opacity: 0.8;
+	color: white;
+}
+
+.restart{
+	height: 45px;
+	width: 100px;
+	position: absolute;
+	top: 0px;
+	left: 300px;
+	line-height: 50px;
+	background-size: 300px 50px;
+	background-image: url("../image/background/11.png");
+	font-style: oblique;
+	font: bold;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.next{
+	height: 45px;
+	width: 100px;
+	position: absolute;
+	top: 0px;
+	right: 50px;
+	background-size: 300px 50px;
+	background-image: url("../image/background/11.png");
+	font-style: oblique;
+	font-size: 18px;
+	line-height: 50px;
+	cursor: pointer;
+}
+
+.return{
+	position: absolute;
+	left: 450px;	
+
+}
+
+
+/*bag and shop*/
+
+.store{
+	position: absolute;
+	top: 90px;
+	height: 220px;
+	width: 900px;
+	z-index: 0;
+	opacity: 1;
+	opacity: !important;
+}
+
+
+.store .tableTop{
+	position: absolute;
+	top: -40px;
+	height: 20px;
+	width: 416px;
+	background-image: url("../image/background/A.png");
+	color: darkorange;
+	text-align: center;
+	color: #FFA500;
+	text-align: center;
+	font-style: oblique;
+}
+
+.store .tableTop2{
+	position: absolute;
+	top: -40px;
+	height: 20px;
+	width: 416px;
+	background-image: url("../image/background/A.png");
+
+	color: darkorange;
+	text-align: center;
+	color: #FFA500;
+	text-align: center;
+	font-style: oblique;	
+}
+
+.bagHead{
+	position: absolute;
+	top: -20px;
+	height: 20px;
+	width: 416px;
+	background-image: url("../image/background/A.png");
+}
+
+.storeHead{
+	position: absolute;
+	top: -20px;
+	height: 40px;
+	width: 416px;
+	background-image: url("../image/background/A.png");
+	color: wheat;
+}
+
+.item{
+	float: left;
+	display: inline;
+	height: 40px;
+	width: 100px;
+	background-image: url("../image/background/A.png");
+
+}
+.icon{
+	float: left;
+	display: inline;
+	height: 40px;
+	width: 45px;
+	background-image: url("../image/background/A.png");
+}
+.quantity{
+	float: left;
+	display: inline;
+	height: 40px;
+	width: 80px;
+	background-image: url("../image/background/A.png");
+}
+.des{
+	float: left;
+	display: inline;
+	height: 40px;
+	width: 110px;
+	background-image: url("../image/background/A.png");
+}
+
+.price{
+	float: left;
+	display: inline;
+	height: 40px;
+	width: 81px;
+	background-image: url("../image/background/A.png");
+}
+
+.store .one{
+	width: 100px;
+}
+.store .two{
+	width: 30px;
+}
+.store .three{
+	width: 100px;
+}
+
+.store .left{
+	float: left;
+	width: 416px;
+	background-image: url("../image/background/A.png");
+	height: 300px;
+	display: block;
+	overflow: auto;
+	color: wheat;
+	margin-top: 20px;
+}
+
+
+
+.store .right{
+	float: right;
+	width: 416px;
+	height: 300px;
+	display: block;
+	overflow: auto;
+	background-image: url("../image/background/A.png");
+	color: 	wheat;
+	margin-top: 20px;
+}
+
+
+.store .left .pos{
+	line-height: 0;
+}
+.store .right .pos{
+	line-height: 0;
+}
+
+.store ::-webkit-scrollbar {
+	width: 16px;
+	background-image: url("../image/background/CC.png");
+}
+
+.store ::-webkit-scrollbar-thumb
+{
+    border-radius:10px;
+    -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);
+    background-image: url("../image/background/QQ.png");
+}
+
+.store tr{
+	height: 50px;
+	line-height: 50px;
+}
+
+.effect{
+	font-size: 16px;
+	line-height: 20px;
+	color: #EE82EE;
+	text-align: center;
+	font-style: oblique;
+}
+
+.select{
+	width: 700px;
+	height: 200px;
+	position: absolute;
+	margin-left: -250px;
+	margin-top: 30px;
+	top: 50%;
+	left: 50%;
+	/*margin: 0 auto;*/
+}
+
+.selectHead{
+	height: 90px;
+	color: #B0E0E6;
+	color: black;
+	line-height: 30px;
+	font: bold;
+	font-style: oblique;
+	text-align: center;
+	font-size: 16px	;
+	line-height: 90px;
+	background-image: url("../image/background/2.jpg");	
+
+}
+
+.subSelect{
+	height: 80px;
+	line-height: 66px;
+	font: bold;
+	font-style: oblique;
+	text-align: center;
+	font-size: 16px	;
+	background-image: url("../image/background/11.png");	
+
+}
+
+.shadow{
+	background-color: black;
+	opacity: 1;
+	width: 100%;
+	height: 100%;
+	opacity: !important;
+}
+
+
+.overShadow{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	opacity: 1;
+	z-index: 7;
+	background-image: url("../image/background/EE.png");
+}
+
+.endGame{
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	bottom: 30px;
+	right: 40%;
+	background-image: url("../image/background/EE.png");
+	line-height: 50px;
+}
+
+.baseFoot{
+	background-image: url("../image/background/EE.png");	
+
+}
+
+.formPosition2{
+	margin-top: 100px;
+	/*margin-top: -20px;*/
+	margin-left: 30%;
+	height: 400px;
+	/*position: relative;*/
+	position: fixed	;
+  	width: 500px;
+	/*opacity: 0.8;*/
+	color: black;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	background-image: url("../image/background/bcg.jpg");
+	background-size: 500px;
+	background-repeat: no-repeat;
+}
+
+.content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 400px;
+	width: 50%;
+}
+
+
+
+.special{
+	width: 80px;
+}
+
+.bagBody{
+	background-image: url("../image/background/A.png");	
+}

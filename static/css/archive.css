@@ -1,0 +1,244 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a:hover{
+  color: yellow;
+  text-decoration: none;
+}
+
+/*font-style*/
+.formPosition {
+    color: #fff;
+    font-style: oblique;
+    text-shadow: 
+        0 0 10px #0ebeff,
+        0 0 20px #0ebeff,
+        0 0 50px #0ebeff,
+        0 0 100px #0ebeff,
+        0 0 200px #0ebeff
+}
+
+.readFile {
+    text-shadow: 0 0 5px #fff;
+}
+.index {
+    text-shadow: 0 0 5px #fff;
+}
+
+/*initial*/
+
+.formPosition{
+	/*width: 1000px;*/
+	height: 100%;
+    width: 100%;
+    margin: 0 auto;
+	position: absolute;
+	padding-top:50px;
+	color: black;
+	opacity: 0.6;
+	background-color: black;;
+}
+
+
+.archive1{
+  height: 260px;
+  width: 520px;
+  position: absolute;
+  top: 230px;
+  margin-left: 30%;
+  color: white;
+  opacity: 0.8;
+}
+
+
+.gradient-text {
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1{
+  font-family: "Papyrus";
+  font-size: 700%;
+  text-align: center;
+  font-weight: bold;
+}
+
+p{
+  font-family: "papyrus";
+  color: white;
+  font-size: 150%;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 88%;
+  animation: animate 6s linear;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+}
+
+/*image*/
+.portrait{
+  height: 10px;
+  width: 10px;
+}
+
+.portrait img{
+  height: 60px;
+  width: 60px;
+  margin-top: -25px;
+}
+
+.oneBorder{
+
+  position: relative;
+  height: 260px;
+  width: 160px;
+  min-height:1px;
+  float: left;
+}
+
+
+.one{
+  height: 200px;
+  width: 140px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.twoBorder{
+  position: relative;
+  height: 260px;
+  width: 160px;
+  min-height:1px;
+  float: left;
+  right: -60px;
+
+}
+
+
+.two{
+  height: 200px;
+  width: 140px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+
+.threeBorder{
+  position: relative;
+  height: 260px;
+  width: 160px;
+  min-height:1px;
+  float: left;
+  right: -120px;
+}
+.three{
+  height: 200px;
+  width: 140px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+
+.rowHead{
+  text-align: center;
+  font-size: 20px;
+  width: 150px;
+  color: black;
+  background-color: #228B22;
+}
+
+.row{
+  height: 56px;
+  width: 150px;
+  margin-left: 0px;
+  border-color: black;
+  background-color: white;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding-top: 6px;
+}
+
+.saveFile{
+  height: 43px;
+  width: 100px;
+   font-size: 16px;
+  line-height: 43px;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  top: 20px;
+  right: -220px;
+  color: white;
+  background-image: url("../image/background/BB.png");
+
+}
+
+.readFile{
+  height: 43px;
+  width: 100px;
+   font-size: 16px;
+  line-height: 43px;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  top: 120px;
+  right: -220px;
+  color: white;
+  background-image: url("../image/background/BB.png");
+}
+
+.game{
+  height: 43px;
+  width: 100px;
+   font-size: 16px;
+  line-height: 43px;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  top: 300px;
+  left: 135px;
+  color: white;
+  background-image: url("../image/background/BB.png");
+  display: none;
+}
+
+.index{
+  height: 43px;
+  width: 100px;
+  font-size: 16px;
+  line-height: 43px;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  top: 300px;
+  left: 355px;
+  color: white;
+  background-image: url("../image/background/BB.png");
+
+}
+
+.highlight{
+  opacity: 1;
+}
+
+.noLight{
+  opacity: 0.8;
+}

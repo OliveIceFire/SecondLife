@@ -1,0 +1,31 @@
+{% extends 'game/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+	View Announcements
+{% endblock %}
+
+{% block body_block %}
+<link rel="stylesheet" href="../../static/css/announcements.css">
+<link rel="stylesheet" href="../../static/css/base.css">
+
+<div class="main">
+<div class="formPosition">
+
+<h1>Announcements</h1> <br /><br />
+</div>
+
+{% if announcements %}
+{% for announcement in announcements %}
+
+	<div class="head">{{ announcement.title }}</div><br />
+        <p>{{ announcement.content }}</p> <br /><br />
+</table>
+{% endfor %}
+
+{% else %}
+<p>There are no announcements.</p>
+
+</div>
+{% endif %}
+{% endblock %}

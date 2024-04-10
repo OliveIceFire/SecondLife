@@ -1,0 +1,95 @@
+{% extends 'game/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+	Game
+{% endblock %}
+{% block body_block %}
+<link rel="stylesheet" href="../../static/css/game.css">
+    <script type="text/javascript">
+        var attribute = {{attribute}};
+        var age = {{age}};
+        var eventId = {{event_id}};
+        var isEnd = {{is_end}};
+    </script>
+<div class="main NoSelect" >
+
+<!--    endGame Page-->
+
+    <div class="game">
+        <div class="top">
+            <table class="table table-bordered table-striped table-condensed">
+                <thead class="top1"></thead>
+                <tbody class="top2"></tbody>
+            </table>
+        </div>
+        <a href="{% url 'second_life:archive' %}" class="save">Save</a>
+       <a href="#" onclick="openBag()" class="shop">BAG STORE</a>
+        <a href="#" onclick="tips()" class="tips">TIPS</a>
+        <a href="#" onclick="teamList()" class="teamList">TEAM <br/>LIST</a>
+    <div class="middle">
+<!--        class=hide-->
+        <div class="store hide" id="wholeStore">
+            <div class="left">
+                <div class="bagHead"><div class="item">Item</div><div class="icon">Icon</div><div class="quantity">Quantity</div><div class="des">Item Description</div><div class="price"></div></div>
+                <div class="tableTop">Bag  (doubleclick icon to use)</div>
+                 <table id="bag" class="pos table table-bordered table-condensed">
+                     <tbody class="bagBody"></tbody>
+                </table>
+            </div>
+
+            <div class="right">
+                <div class="storeHead"><div class="item">Item</div><div class="icon">Icon</div><div class="quantity quantityFix">Available Quantity</div><div class="des">Item Description</div><div class="price">Price</div></div>
+                <div class="tableTop2">Store  (doubleclick icon to purchase)</div>
+                <table id="store" class="pos table table-bordered  table-condensed">
+<!--                     <thead><span class="one"></span><span class="two"></span><span class="three"></span></thead>-->
+                     <tbody class="storeBody"></tbody>
+                </table>
+            </div>
+        </div>
+<!--        Event line-->
+        <div class="subMiddle" id="subMiddle">
+        <div class="tableHead"><div class="left">Year</div><div class="right">Event</div></div>
+            <table class=" event table table-bordered table-striped table-condensed">
+                <tbody id="subMiddleBody"  class="body"></tbody>
+            </table>
+        </div>
+
+
+        <div class="subMiddle2" id="subMiddle2">
+            <div class="downRight" id="downRight">
+                <a href="{% url 'second_life:initial' %}"><div class="restart" id="restart" hidden>Restart</div></a>
+                <a href="#"></a> <div class="next" id="next">Next</div>
+            </div>
+        </div>
+    </div>
+<!--    event select-->
+        <div class="select hide" id="select">
+            <div id="question" class="selectHead"></div>
+            <div class="subSelect"><a id="option1" href="javascript:void(0)" onclick="choose(this)"></a></div>
+            <div class="subSelect"><a id="option2" href="javascript:void(0)" onclick="choose(this)"></a></div>
+            <div class="subSelect"><a id="option3" href="javascript:void(0)" onclick="choose(this)"></a></div>
+        </div>
+    </div>
+
+
+</div>
+
+    <div id="shadow" class="shadow hide"></div>
+
+        <div id="end" class="overShadow hide">
+        <div class="formPosition2">
+            <div id="content">
+
+            </div>
+            <button class="endGame" onclick="clickReturn()">Return</button>
+        </div>
+    </div>
+
+
+
+<script src="../../static/js/game.js"></script>
+<script src="../../static/js/store.js"></script>
+<script src="../../static/js/common.js"></script>
+
+{% endblock %}

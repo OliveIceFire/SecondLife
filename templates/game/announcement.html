@@ -1,0 +1,32 @@
+{% extends 'game/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+	Add Announcement
+{% endblock %}
+
+{% block body_block %}
+<link rel="stylesheet" href="../../static/css/announcements.css">
+<link rel="stylesheet" href="../../static/css/base.css">
+
+<div class="main">
+<div class="formPosition">
+<h1>Add Announcement</h1> <br /> <br /></div>
+<form id="AnnouncementForm" method="post" action="/second_life/post/" class="form">
+        {% csrf_token %}
+
+ {% for hidden in form.hidden_fields %}
+ 	{{ hidden }}
+ {% endfor %}
+ 
+
+<div class ="form">{% for field in form.visible_fields %}
+ 	{{ field.errors }}
+ 	<p>{{ field.help_text }}</p>
+ 	<p class="field">{{ field }}<br /> </p>
+ {% endfor %}</div>
+
+	<p><input type="submit" class="gradient-button gradient-button-1" value="Submit" /></p>
+ </form>
+</div>
+{% endblock %}

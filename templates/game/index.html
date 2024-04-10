@@ -1,0 +1,33 @@
+{% extends 'game/base.html' %}
+
+{% block title_block %}
+    Login
+{% endblock %}
+
+{% block body_block %}
+
+<link rel="stylesheet" href="../../static/css/home.css">
+    
+<div class ="formPosition">
+      <h1 class="gradient-text">Second Life</h1>
+    <br><br><br><br><br>
+    <p class="welcome">
+        {% if user.is_authenticated %}
+            Welcome, {{ user.username }}.
+
+        {% else %}
+            Welcome to your new life
+        {% endif %}
+    </p>
+    <br />
+</div>
+
+
+<div class="one gradient-text">
+        <a href="{% url 'second_life:initial' %}">Start Game</a>
+</div>
+<div class="second gradient-text">
+    <a href="{% url 'second_life:archive' %}">Read Archive</a>
+</div>
+
+{% endblock %}

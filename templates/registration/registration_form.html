@@ -1,0 +1,26 @@
+{% extends 'game/base.html' %}
+
+{% block title_block %}
+    Register
+{% endblock %}
+
+{% block body_block %}
+<link rel="stylesheet" href="../../static/css/r_form.css">
+<link rel="stylesheet" href="../../static/css/base.css">
+
+<div class="main">
+    <div class="formPosition">
+    <h1>Register Here</h1>
+
+<form method="post" action=".">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button name="player" type="submit" class="gradient-button gradient-button-1" value="player">player</button>
+    <button name="administrator" type="submit" class="gradient-button gradient-button-1" value="player">administrator</button>
+    </form>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.formPosition{
+	width: 800px;
+	height: 500px;
+	margin-left: 325px;
+	position: relative;
+	text-align:left;
+	padding-top:50px;
+	color: black;
+	opacity: 0.6;
+	background-color: #B0E0E6;;
+}
+
+h1 {
+  font-family: "papyrus";
+  font-size: 700%;
+  text-align: center;
+  font-weight: bold;
+}
+p {
+   colour: black;
+   text-align:left;
+}
+
+.button{
+  text-align: center;
+}

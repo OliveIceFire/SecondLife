@@ -1,0 +1,54 @@
+{% extends 'game/base.html' %}
+
+{% block title_block %}
+    initialization
+{% endblock %}
+
+{% block body_block %}
+
+<link rel="stylesheet" href="../../static/css/base.css">
+<link rel="stylesheet" href="../../static/css/initialization.css">
+    <script type="text/javascript">
+        var attribute = {{ attribute }};
+    </script>
+<div class="main NoSelect">
+    <div id="shadow hide"></div>
+<div class="position">
+    <h1><span class="subTitle">Customize your life</span></h1>
+    <a href="#" id="initial" data-userid="{{user_id}}"></a>
+    <div class="name">
+        <label>First Name</label>
+        <input type="text" id="first_name" name="first_name">
+    </div>
+    <div class="name">
+        <label>Last Name</label>
+        <input type="text" id="last_name" name="last_name">
+    </div>
+
+    <div class="profile">
+        <div class="picture">
+            <img id="head" src=""  alt="head portrait"/>
+        </div>
+    </div>
+    <div class="direction">
+        <div id="pre" class="down prev"><a href="#">Prev</a></div>
+        <div id="next" class="down next"><a href="#">Next</a></div>
+    </div>
+
+    <div class="available">
+        <div class="down left">Available</div>
+        <div id="available" class="down right">0</div>
+    </div>
+
+        <a href="#" id="random"><div class="deal random" >Random Again</div></a>
+        <a href="#" id="confirm"><div class="deal confirm">Confirm</div></a>
+    <table class="table1 table-bordered table-striped table-condensed">
+        <thead><td>Attr Name&nbsp;&nbsp;&nbsp;</td><td>Value</td></thead>
+        <tbody>
+        </tbody>
+    </table>
+    </div>
+</div>
+<script src="../../static/js/initialization.js"></script>
+
+{% endblock %}

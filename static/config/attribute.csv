@@ -1,0 +1,9 @@
+attribute_id,attribute_name,is_hidden,notes
+1,health,0,
+2,sport,0,
+3,art,0,
+4,intelligence,0,
+5,luck,1,
+6,reputation,1,
+7,mood,0,
+8,wealth,0,
